@@ -86,9 +86,11 @@ const USER_CONFIG = {
         },
 
         // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
-
         {
-          type: '节日', name: '相爱', year: '2019', date: '09-07',
+          type: '*生日', name: '宁宁', year: '2001', date: '12-16',
+        },
+        {
+          type: '节日', name: '相爱纪念日', year: '2019', date: '09-07',
         }
       ],
       // 专属纪念日/倒数日，如果你在这里填写了纪念日/倒数日，就不会计算CUSTOMIZED_DATE_LIST的日子了, 和CUSTOMIZED_DATE_LIST的配置方法相同，可以往下查看，我这里就不重复写了
@@ -214,7 +216,7 @@ const USER_CONFIG = {
    */
 
   // 【推送完成提醒】模板id, 用来看自己有没有发送成功的那个模板
-  CALLBACK_TEMPLATE_ID: '	WWda19qyS32Zq6XMCuBloGemKmzjsrpCmtH8WuybxZI',
+  CALLBACK_TEMPLATE_ID: 'WWda19qyS32Zq6XMCuBloGemKmzjsrpCmtH8WuybxZI',
 
   // 接收成功回调消息的微信号，（一般来说只填自己的微信号, name填不填无所谓）
   CALLBACK_USERS: [
