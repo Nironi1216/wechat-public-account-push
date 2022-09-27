@@ -9,10 +9,6 @@ wechat-public-account-push
 
 </h1>
 
-
-[![GitHub Stars](https://img.shields.io/github/stars/wangxinleo/wechat-public-account-push?style=flat-square)](https://github.com/wangxinleo/wechat-public-account-push/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/wangxinleo/wechat-public-account-push?style=flat-square)](https://github.com/wangxinleo/wechat-public-account-push/network/members)
-[![GitHub Issues](https://img.shields.io/github/issues/wangxinleo/wechat-public-account-push?style=flat-square)](https://github.com/wangxinleo/wechat-public-account-push/issues)
 [![GitHub Contributors](https://img.shields.io/github/contributors/wangxinleo/wechat-public-account-push?style=flat-square)](https://github.com/wangxinleo/wechat-public-account-push/graphs/contributors)
 [![GitHub License](https://img.shields.io/github/license/wangxinleo/wechat-public-account-push?style=flat-square)](https://github.com/wangxinleo/wechat-public-account-push/blob/master/LICENSE)
 ![Unit Test](https://github.com/wangxinleo/wechat-public-account-push/actions/workflows/unit-test.yml/badge.svg)
@@ -23,11 +19,6 @@ wechat-public-account-push
 **wechat-public-account-push
 是一个用于微信公众号/微信测试号给用户执行微信推送的脚本，改编自目前小红书/知乎突然火起来的【给女朋友的七夕浪漫，微信自动推送消息】，用Nodejs实现而成。**
 
-**如果这个项目很有意思，帮忙右上角点个 star✨ 支持我们 ❤❤**
-
-**如果有任何需要帮助可以联系wangxin.leo@outlook.com ❤❤**
-
-[>>> 点这里获取更新公告✨](https://github.com/wangxinleo/wechat-public-account-push/discussions/categories/announcements)
 
 详细功能如下：
 
@@ -41,7 +32,7 @@ wechat-public-account-push
 - **推送回执**
 - **自定义出参，模板定制更个性**
 - **网页自动生成配置插件**
-- **支持gitee go / github actions 不需要拥有服务器，白嫖actions执行，每天定时发送**
+- **支持gitee go（需要开会员（国内的dddd）） / github actions 不需要拥有服务器，白嫖actions执行，每天定时发送**
 - **支持本地化部署每天定时发送**
 - **理论上支持所有远端的日志推送（目前仅支持测试号，没时间做）**
 
@@ -65,15 +56,6 @@ wechat-public-account-push
 - [5. GitHub/Gitee 如何更改自动执行时间](#5-githubgitee-如何更改自动执行时间)
     - [5.1. github action如何更改自动执行时间](#51-github-action如何更改自动执行时间)
     - [5.2. gitee go如何更改自动执行时间](#52-gitee-go如何更改自动执行时间)
-- [6. 常见问题](#6-常见问题)
-- [7. 版本发布及更新](#7-版本发布及更新)
-- [8. 成为开源贡献成员](#8-成为开源贡献成员)
-    - [8.1. 贡献代码](#81-贡献代码)
-    - [8.2. 贡献文档](#82-贡献文档)
-- [9. 致谢](#9-致谢)
-- [10. wechat-public-account-push 答疑群](#10-wechat\-public\-account\-push答疑群)
-- [11. 其他](#11-其他)
-
 <!-- /TOC -->
 
 
@@ -95,11 +77,6 @@ wechat-public-account-push
 - **所有代码都是开源且透明的，任何人均可查看，程序不会保存或滥用任何用户的个人信息**
 - **请仔细阅读配置文档，自己对自己的配置负责**
 
-运行图示：
-
-![图片无法查看请移步顶部访问 国内备用仓库地址](img/run-img.jpg)
-
-![图片无法查看请移步顶部访问 国内备用仓库地址)](img/run-img-2.jpg)
 
 ## 1. 如何使用(以测试号为例)
 
@@ -113,11 +90,10 @@ wechat-public-account-push 实现自消息推送的原理，是通过调用一�
 
 - 登录成功后, 就可以生成微信公众测试号的appID和appsecret这两串数字, 记下备用
 
-![图片无法查看请移步顶部访问 国内备用仓库地址](img/wx-test-id.png)
+
 
 - 扫描测试号二维码关注测试号, 扫描之后, 右边就会出现相应的已关注人员id, 记下备用
 
-![图片无法查看请移步顶部访问 国内备用仓库地址](img/wx-test-follow.png)
 
 ### 1.2. 第二步：进行模板配置
 
@@ -166,7 +142,6 @@ wechat-public-account-push 实现自消息推送的原理，是通过调用一�
 
 记下模板代码
 
-![图片无法查看请移步顶部访问 国内备用仓库地址](img/wx-test-tmp.png)
 
 ### 1.3. 第三步：完成配置文件，并运行wechat-public-account-push
 
@@ -307,13 +282,8 @@ wechat-public-account-push 实现自消息推送的原理，是通过调用一�
 爱你！
 ```
 
-> 大概的实现原理类似于下图标注的这样：
-> 
-> ![图片无法查看请移步顶部访问 国内备用仓库地址](img/self-keyword.png)
-> 
-> 但是有以下情况需要注意，不要占用表中已有的关键字，会发生不可预料的状况噢！
-> 
-> ![图片无法查看请移步顶部访问 国内备用仓库地址](img/self-keyword-2.png)
+不要占用表中已有的关键字，会发生不可预料的状况噢！
+
 
 ## 3. config参数说明
 > 配置文件的详细说明，使用旧配置的小伙伴可以对照此文档增加新的配置
@@ -358,126 +328,14 @@ on:
 
 **定时任务注意尽量避免设置在 `utc 0:00, XX:00` 这类高拥堵时段。**
 
-![图片无法查看请移步顶部访问 国内备用仓库地址](img/action-cron.png)
 
 或使用[https://crontab.guru](https://crontab.guru)帮助配置
 
-### 5.2 gitee go如何更改自动执行时间
 
-![图片无法查看请移步顶部访问 国内备用仓库地址](img/gitee/gitee-workflow10.png)
-
-![图片无法查看请移步顶部访问 国内备用仓库地址](img/gitee/gitee-workflow11.png)
-
-## 6. 常见问题
-
-[关于获取accessToken:请求失败invalid appsecret rid xxxxx](https://github.com/wangxinleo/wechat-public-account-push/discussions/68)
-
-[关于推送失败，报40001- 4000X](https://github.com/wangxinleo/wechat-public-account-push/discussions/39)
-
-[关于目前仅支持测试号的问题](https://github.com/wangxinleo/wechat-public-account-push/discussions/23)
-
-[关于定时任务好像没有自动执行（?）](https://github.com/wangxinleo/wechat-public-account-push/discussions/20)
-
-[Issues（议题）](https://github.com/wangxinleo/wechat-public-account-push/issues)板块可以用来提交**Bug**和**建议**；
-
-[Discussions（讨论）](https://github.com/wangxinleo/wechat-public-account-push/discussions)板块可以用来**提问**和**讨论**。
-
-所以如果你有疑问，
-
-* 请先确认是否可以通过升级到最新版本解决
-* 然后搜索文档（特别是配置说明文档和常见问题文档）查看是否已有解决方案
-
-如果确认还未解决，可以自己提交 Issue，我会尽快确认并解决。
-
-## 7. 版本发布及更新
-
-关于新版本发布后，如何同步最新的内容到自己 Fork 的仓库
-
-### 7.1 重新fork
-
-**删掉后重新Fork会导致之前配置过的GitHub Secrets和提交的代码更改全部丢掉，只能重新部署。**
-
-### 7.2 GitHub Fetch Upstream Branch
-
-- 在自己的项目仓库中选择 "Sync fork"
-
-- 点击 "Update branch" 完成
-
-![图片无法查看请移步顶部访问 国内备用仓库地址](img/pr-1.png)
-
-可能会遇到 **因为冲突需要你们删除你们已经更改的记录**
-
-如果只是纯粹更改配置，放心大胆的点删除, 然后更新最新代码仓库就好了。
-
-如果**你更改了源代码进行了部分定制**, 请注意备份代码段。
-
-### 7.3 actions 脚本自动
-
-**以后会考虑加入actions 脚本每周自动更新fork仓库，但是目前精力不足，只能采用上述保守方案**
-
-建议每个人先看看更新的内容是否是自己需要的再进行更新。
-
-也建议把右上角的 Star 点一下，这样有重要更新时就会有邮件推送了。
-
-## 8. 成为开源贡献成员
-
-### 8.1 贡献代码
-
-如果你有好的想法，欢迎向仓库贡献你的代码，贡献步骤：
-
-* 搜索查看 Issue，确定是否已有人提过同类问题或者有新的想法
-
-
-* 确认没有同类 Issue 后，自己可新建 Issue，描述问题或建议
-
-
-* 如果想自己解决，请 Fork 仓库后，在**develop 分支**进行编码开发，完成后**提交 PR 到 develop 分支**，并标注解决的 Issue 编号
-
-我会尽快进行代码审核，测试成功后会合并入 main 主分支，提前感谢您的贡献。
-
-### 8.2 贡献文档
-
-文档部分由于我个人精力有限（写文档比写代码累多了），所以有些地方写的很简略，甚至有遗漏和错别字，不能贡献代码的朋友也欢迎来一起维护文档，欢迎
-PR 来纠正我，一样都算是对开源做贡献了。
-
-## 9. 致谢
-
-### 贡献/参与者
-
-@LordonCN Lordon
-
-@ZzqiZQute zz
-
-@shuangxunian ShuangxuNian
-
-感谢那些默默支持我, 鼓励我继续更新这个小玩具的朋友。
-
-感谢所有参与到开发/测试中的朋友们，是大家的帮助让 TA 越来越好！ (*´▽｀)ノノ
-
-## 10. wechat-public-account-push答疑群
-
-不管文档写得多详细，还是会有人不会呐！还是建个群答疑吧!
-
-群我隐藏在文档里了哼哼，不仔细看文档可找不到加群的地方哦！
-
-2022-09-10 算啦还是不隐藏了，你们来尽情问吧。
-
-![图片无法查看请移步顶部访问 国内备用仓库地址](img/wechat-public-account-push.png)
-
-<a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=y0plwm9zhOI35EwlOdRh372g4KWbqMSt&jump_from=webapi"><img border="0" src="https://pub.idqqimg.com/wpa/images/group.png" alt="wechat-public-account-push 交流群" title="wechat-public-account-push 交流群"></a>
-
-## 11. 其他
-
-时区查询: [https://www.zeitverschiebung.net/cn/all-time-zones.html](https://www.zeitverschiebung.net/cn/all-time-zones.html)
-
-<!-- ## 11. 叨叨两句
+叨叨两句
 
 **这个仓库只能算是重复实现一下别人的想法, 主要是了解到了这个想法却一直找不到原作者的源码很是苦恼, 结果还遇到了要求加关注的情况**
 
 **真的非常不喜欢目前国内论坛/某乎/某书/某字母站的博主在分享一些有趣的项目后,甚至是分享了教程之后却不提供源码链接,要求关注公众号或QQ群才进行分享**
 
 **虽然我无权谴责这些流量变现的做法, 但是我认为作者既然开源自己的作品, 那就是希望其他人能一起体会coding的喜悦, 请部分博主尊重作者意愿, 尊重开源协议**
-
-![图片无法查看请移步顶部访问 国内备用仓库地址](img/dis.png)
-
-![图片无法查看请移步顶部访问 国内备用仓库地址](img/dis-2.png) -->
